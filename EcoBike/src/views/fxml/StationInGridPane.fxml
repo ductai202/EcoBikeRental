@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="350.0" style="-fx-border-color: lime; -fx-border-radius: 8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="147.0" prefWidth="350.0" spacing="8.0" style="-fx-background-radius: 8;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="98.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../assets/images/a5eefd1f1c9f70d3ac1f7641f177e79bb7863d5bff51eecf15e469dad2f3a1b6.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox prefHeight="147.0" prefWidth="268.0" spacing="5.0">
+               <children>
+                  <Label fx:id="stationNameLabel" prefHeight="40.0" prefWidth="77.0" text="Station 1">
+                     <font>
+                        <Font name="Verdana Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="164.0" spacing="6.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="66.0" text="Địa chỉ">
+                           <font>
+                              <Font name="Verdana Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="stationAddressLabel" prefHeight="18.0" prefWidth="104.0" text="Hai Bà Trưng">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="200.0" spacing="6.0">
+                     <children>
+                        <Label text="Số xe đang có">
+                           <font>
+                              <Font name="Verdana Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="stationAvailLabel" text="20">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="optionHBox" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="6.0">
+                     <children>
+                        <Button fx:id="stationButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: lime;" text="Chọn">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="editButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: lime;" text="Sửa">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

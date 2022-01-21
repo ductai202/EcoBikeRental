@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src\\views",
+    "\\src\\views\\screen",
+    "\\src\\views\\screen\\popup",
+    "\\src\\views\\screen\\result",
+    "\\src\\views\\screen\\return_bike",
+    "\\src\\views\\screen\\update_bike",
+    "\\src\\views\\screen\\update_station",
+    "\\test\\caculator_bike",
+    "\\test\\controller"
+  ],
+  "SelectedNode": "\\EcoBikeRentBike.iml",
+  "PreviewInSolutionExplorer": false
+}

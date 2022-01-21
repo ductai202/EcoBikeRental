@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="675.0" style="-fx-border-radius: 8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="areaInfoStationHBox" alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="688.0" style="-fx-background-radius: 10; -fx-border-color: green;">
+         <children>
+            <Label fx:id="infoUser" prefHeight="70.0" prefWidth="675.0" text="- Station 1 - Trần Đại Nghĩa, Quận Hai Bà Trưng , Hà Nội - [20]" wrapText="true">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

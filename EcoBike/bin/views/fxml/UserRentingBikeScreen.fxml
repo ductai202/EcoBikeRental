@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="652.0" prefWidth="693.0">
+         <children>
+            <HBox prefHeight="79.0" prefWidth="693.0" style="-fx-background-color: #22bc79;">
+               <children>
+                  <Pane prefHeight="79.0" prefWidth="695.0">
+                     <children>
+                        <Label layoutX="145.0" layoutY="27.0" text="Xem thông tin người dùng đang thuê xe">
+                           <font>
+                              <Font name="Verdana" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="513.0" prefWidth="683.0">
+               <content>
+                  <VBox fx:id="listStationVBox" prefHeight="515.0" prefWidth="656.0" spacing="2.0" />
+               </content>
+            </ScrollPane>
+            <HBox prefHeight="62.0" prefWidth="693.0" style="-fx-background-color: #22bc79;">
+               <children>
+                  <Pane prefHeight="62.0" prefWidth="695.0">
+                     <children>
+                        <Button fx:id="btnBack" layoutX="302.0" layoutY="15.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" text="Quay lại" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

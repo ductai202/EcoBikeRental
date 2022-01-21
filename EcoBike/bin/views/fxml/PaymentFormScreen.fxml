@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1000.0" spacing="10.0" style="-fx-background-color: #22bc79;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Hệ thống thuê xe điện tử BikeRetal">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="539.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="areaPaymentVBox" layoutX="456.0" layoutY="84.0" prefHeight="464.0" prefWidth="484.0" spacing="7.0">
+                     <children>
+                        <Label text="Mã thẻ (card number)">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="cardNumber" prefHeight="30.0" prefWidth="386.0" text="kscq2_group20_2021" />
+                        <Label text="Tên chủ thẻ (cardholder name)">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="holderName" prefHeight="30.0" prefWidth="386.0" text="Group 20" />
+                        <Label text="Ngày hết hạn (expiration date)">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="expirationDate" prefHeight="30.0" prefWidth="386.0" text="11/25" />
+                        <Label text="Mã bảo mật (security code)">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="securityCode" prefHeight="30.0" prefWidth="386.0" text="698" />
+                        <Label text="Nội dung giao dịch (transaction description)">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="transactionContent" prefHeight="84.0" prefWidth="464.0" promptText="content transaction" text="rent bike" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+                  <RadioButton fx:id="paymentRadioButton" layoutX="14.0" layoutY="109.0" mnemonicParsing="false" onAction="#isChooseCreaditCard" selected="true" text="CreditCard">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="14.0" layoutY="84.0" text="Phương thức thanh toán">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="74.0" prefWidth="1000.0" style="-fx-background-color: #22bc79;">
+                     <children>
+                        <Label alignment="CENTER" text="Thông tin giao dịch thuê xe">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutY="548.0" prefHeight="79.0" prefWidth="1000.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: red;" text="Trở về" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="confirmPaymentButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="180.0" style="-fx-background-color: green;" text="Xác nhận thanh toán" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
